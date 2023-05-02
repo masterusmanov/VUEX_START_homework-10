@@ -54,10 +54,10 @@ export default {
 
     <input type="text" @input="(e) => SET_VAL(e.target.value)" />
 
-    <button @click="REQ_POST">GET ALL POSTS</button>
+    <!-- <button @click="REQ_POST">GET ALL POSTS</button>
     <button @click="REQ_COMMENT">GET ALL Comments</button>
     <button @click="REQ_PHOTOS">GET ALL Photos</button>
-    <button @click="REQ_TODOS">GET ALL Todos</button>
+    <button @click="REQ_TODOS">GET ALL Todos</button> -->
 
     <router-view></router-view>
   </div>

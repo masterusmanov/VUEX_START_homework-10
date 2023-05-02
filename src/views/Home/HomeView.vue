@@ -5,7 +5,7 @@ export default {
   },
   computed: {
     LOAD() {
-      return this.$store.state.loadPost;
+      return this.$store.state.getPost.loadPost;
     },
   },
 };
@@ -18,7 +18,7 @@ export default {
     <h2 v-if="!LOAD">LOADING !!!</h2>
 
     <ul v-else>
-      <li v-for="el in $store.state.posts">
+      <li v-for="el in $store.state.getPost.posts">
         {{ el.title }}
       </li>
     </ul>
